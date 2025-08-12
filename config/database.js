@@ -1,12 +1,12 @@
-require('dotenv').config();
 const { Sequelize } = require('sequelize');
 
 const sequelize = new Sequelize(
-  process.env.DB_NAME,      // 'salao'
-  process.env.DB_USER,      // 'root'
-  process.env.DB_PASS,      // '12345678'
+  'railway', // DB_NAME
+  'root',    // DB_USER
+  'ODxfCFYvVMhfbXFUlyrOIXdSeRdkKbjS', // DB_PASSWORD
   {
-    host: process.env.DB_HOST,  // 'localhost'
+    host: 'maglev.proxy.rlwy.net',
+    port: 27439,
     dialect: 'mysql',
     logging: false,
   }
